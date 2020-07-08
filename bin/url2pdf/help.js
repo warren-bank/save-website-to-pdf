@@ -27,6 +27,9 @@ options:
 "--pdf" <filepath>
 "--output-pdf-file" <filepath>
     Specifies the file path where the resulting .pdf file will be saved.
+
+"--hooks" <filepath>
+    Specifies the file path to a CommonJS module that can export various hooks to configure and modify behavior.
 `
 
 module.exports = help

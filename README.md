@@ -37,7 +37,17 @@ options:
 "--pdf" <filepath>
 "--output-pdf-file" <filepath>
     Specifies the file path where the resulting .pdf file will be saved.
+
+"--hooks" <filepath>
+    Specifies the file path to a CommonJS module that can export various hooks to configure and modify behavior.
 ```
+
+#### Hooks:
+
+* please refer to [this complete example](https://github.com/warren-bank/save-website-to-pdf/blob/master/tests/01.%20gitea.io/data/hooks.js)
+  - it implements a ["two-pass" strategy](https://www.princexml.com/doc/11/two-pass/)
+    * 1st pass: extracts a table of contents to a new title page
+    * 2nd pass: removes unwanted DOM elements (ex: header, footer, side navigation menu) before generating the final PDF document
 
 #### Requirements:
  

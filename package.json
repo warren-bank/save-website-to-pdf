@@ -1,6 +1,6 @@
 {
   "name": "@warren-bank/save-website-to-pdf",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "main": "lib/process_cli.js",
   "description": "Command-line utility for downloading an offline copy of a website and converting all HTML pages to a single PDF document.",
   "license": "GPL-2.0",

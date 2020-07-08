@@ -9,7 +9,8 @@ const argv_flags = {
 
   "--input-url":              {},
   "--output-html-dir":        {file: "path-exists"},
-  "--output-pdf-file":        {file: "path-dirname-exists"}
+  "--output-pdf-file":        {file: "path-dirname-exists"},
+  "--hooks":                  {file: "module"}
 }
 
 const argv_flag_aliases = {
